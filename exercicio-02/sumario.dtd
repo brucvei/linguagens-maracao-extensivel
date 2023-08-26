@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!ELEMENT sumarios (disciplina, professor, aula)>
+        <!ATTLIST sumarios CDATA #REQUIRED>
+        <!ELEMENT disciplina (#PCDATA)>
+        <!ELEMENT professor (#PCDATA)>
+        <!ELEMENT aula (data, sumario)>
+        <!ATTLIST aula tipo CDATA #IMPLIED>
+        <!ELEMENT data (#PCDATA)>
+        <!ELEMENT sumario (p)>
+        <!ELEMENT p (lista, #PCDATA)>
+        <!ELEMENT lista (item)>
+        <!ELEMENT item (p)>
