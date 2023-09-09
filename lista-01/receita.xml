@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE livro-de-receitas SYSTEM "receita.dtd">
+<livro-de-receitas>
+    <abertura>
+        <autor>Giovani Rubert Librelotto</autor>
+        <data>15 de Março de 2006</data>
+        <local>UNIFRA - Centro Universitario Franciscano</local>
+    </abertura>
+    <receitas>
+        <receita língua="pt" classificação="doce">
+            <título>Mousse de chocolate</título>
+            <ingredientes>
+                <ingrediente>200g de chocolate de culinária</ingrediente>
+                <ingrediente>50g de margarina</ingrediente>
+                <ingrediente>meia dúzia de ovos</ingrediente>
+                <ingrediente>4 colheres de sopa de açucar</ingrediente>
+            </ingredientes>
+            <preparação>
+                <instrução>Separam-se as gemas das claras.</instrução>
+                <instrução>Derrete-se o chocolate com a margarina.</instrução>
+                <instrução>Adicionam-se as gemas.</instrução>
+                <instrução>Mistura-se o açucar no chocolate.</instrução>
+                <instrução>Batem-se as claras em castelo.</instrução>
+                <instrução>Mistura-se tudo no recipiente final.</instrução>
+            </preparação>
+        </receita>
+        <receita língua="pt" classificação="lanche">
+            <título>Pao de queijo</título>
+            <ingredientes>
+                <ingrediente>500 g de polvilho azedo</ingrediente>
+                <ingrediente>200 g de polvilho doce</ingrediente>
+                <ingrediente>1 xícara (chá) de leite</ingrediente>
+                <ingrediente>1 xícara (chá) de água</ingrediente>
+                <ingrediente>1 colher (sopa) de óleo</ingrediente>
+                <ingrediente>1 colher (chá) de sal</ingrediente>
+                <ingrediente> 3 ovos</ingrediente>
+                <ingrediente>1 xícara (chá) de queijo meia-cura ralado</ingrediente>
+            </ingredientes>
+            <preparação>
+                <instrução>Em uma panela, leve ao fogo médio o leite, a água, o óleo e o sal.</instrução>
+                <instrução>Quando levantar fervura, despeje sobre o polvilho azedo e o polvilho doce, mexendo sempre com uma colher de pau até formar uma massa homogênea.</instrução>
+                <instrução>Desligue o fogo e deixe a massa esfriar um pouco.</instrução>
+                <instrução>Acrescente os ovos, um a um, misturando bem entre cada adição.</instrução>
+                <instrução>Por último, acrescente o queijo ralado e misture até incorporar.</instrução>
+                <instrução>Unte as mãos com óleo e modele bolinhas de pão de queijo do tamanho desejado.</instrução>
+                <instrução>Disponha as bolinhas em uma assadeira untada com óleo, deixando um espaço entre elas.</instrução>
+                <instrução>Leve ao forno médio (180º C), preaquecido, por cerca de 30 minutos, ou até dourar.</instrução>
+            </preparação>
+        </receita>
+        <receita língua="pt" classificação="doce">
+            <título>Pacoca</título>
+            <ingredientes>
+                <ingrediente>2 xícaras (chá) de amendoim torrado e sem pele</ingrediente>
+                <ingrediente>1 xícara (chá) de açúcar</ingrediente>
+                <ingrediente>1 pitada de sal</ingrediente>
+            </ingredientes>
+            <preparação>
+                <instrução>Coloque o amendoim, o açúcar e o sal em um liquidificador ou processador.</instrução>
+                <instrução>Bata até formar uma farofa fina.</instrução>
+                <instrução>Se necessário, pare de bater e, com a ajuda de uma colher, misture o excesso que se formou nas laterais do copo e volte a bater.</instrução>
+                <instrução>Transfira a paçoca para um recipiente e sirva.</instrução>
+            </preparação>
+        </receita>
+    </receitas>
+</livro-de-receitas>

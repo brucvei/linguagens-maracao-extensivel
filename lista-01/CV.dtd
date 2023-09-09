@@ -1,0 +1,42 @@
+<!DOCTYPE pessoa [
+        <!ELEMENT pessoa (nome, sexo, nascimento, universidade, formacao, publicacoes)>
+        <!ELEMENT nome (#PCDATA)>
+        <!ELEMENT sexo (#PCDATA)>
+        <!ELEMENT nascimento (data, cidade)>
+        <!ELEMENT data (#PCDATA)>
+        <!ELEMENT cidade (#PCDATA)>
+        <!ELEMENT universidade (nome, endereco, contato)>
+        <!ELEMENT nome (#PCDATA)>
+        <!ELEMENT endereco (rua, numero, bairro, cep, cidade, estado, pais)>
+        <!ELEMENT rua (#PCDATA)>
+        <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT bairro (#PCDATA)>
+        <!ELEMENT cep (#PCDATA)>
+        <!ELEMENT cidade (#PCDATA)>
+        <!ELEMENT estado (#PCDATA)>
+        <!ELEMENT pais (#PCDATA)>
+        <!ELEMENT contato (telefone, fax, email, url)>
+        <!ELEMENT telefone (ddd, numero, ramal)>
+        <!ELEMENT ddd (#PCDATA)>
+        <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT ramal (#PCDATA)>
+        <!ELEMENT fax (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT url (#PCDATA)>
+        <!ELEMENT formacao (doutorado, mestrado)>
+        <!ELEMENT doutorado (titulo, instituicao, tese, ano, orientador)>
+        <!ELEMENT mestrado (titulo, instituicao, tese, ano, orientador)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT instituicao (#PCDATA)>
+        <!ELEMENT tese (#PCDATA)>
+        <!ELEMENT ano (#PCDATA)>
+        <!ELEMENT orientador (#PCDATA)>
+        <!ELEMENT publicacoes (publicacao+)>
+        <!ELEMENT publicacao (autores, titulo, evento, local, ano)>
+        <!ELEMENT autores (autor+)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT evento (#PCDATA)>
+        <!ELEMENT local (#PCDATA)>
+        <!ELEMENT ano (#PCDATA)>
+        ]>

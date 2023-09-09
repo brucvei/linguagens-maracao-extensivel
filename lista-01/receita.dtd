@@ -1,0 +1,16 @@
+<!DOCTYPE livro-de-receitas [
+        <!ELEMENT livro-de-receitas (abertura, receitas)>
+        <!ELEMENT abertura (autor, data, local)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT data (#PCDATA)>
+        <!ELEMENT local (#PCDATA)>
+        <!ELEMENT receitas (receita+)>
+        <!ELEMENT receita (título, ingredientes, preparação)>
+        <!ATTLIST receita língua (pt|en|es) #REQUIRED>
+        <!ATTLIST receita classificação (doce|salgada) #REQUIRED>
+        <!ELEMENT título (#PCDATA)>
+        <!ELEMENT ingredientes (ingrediente+)>
+        <!ELEMENT ingrediente (#PCDATA)>
+        <!ELEMENT preparação (instrução+)>
+        <!ELEMENT instrução (#PCDATA)>
+        ]>

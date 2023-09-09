@@ -1,0 +1,13 @@
+<!DOCTYPE agenda [
+        <!ELEMENT agenda (entrada+)>
+        <!ELEMENT entrada (id, tipo, nome, email?, telefone)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT tipo (#PCDATA)>
+        <!ELEMENT nome (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT telefone (#PCDATA)>
+        <!ATTLIST entrada entref IDREF #IMPLIED>
+        <!ELEMENT grupo (entrada+)>
+        <!ATTLIST grupo gid ID #REQUIRED>
+        <!ATTLIST grupo ref (e1|e2|e3|e4|e5|e6|e7|e8) #IMPLIED>
+        ]>
