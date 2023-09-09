@@ -1,0 +1,11 @@
+(a) Quantas publicações existem no CV?
+//pessoa/publicacoes/count()
+
+(b) Onde nasceu o proprietário do CV?
+//pessoa/nascimento/cidade/text()
+
+(c) Qual é o título da tese de doutorado?
+//pessoa/formacao/doutorado/tese/text()
+
+(d) Quais são as cidades onde as publicações foram realizadas?
+//pessoa/publicacoes/local/text()
