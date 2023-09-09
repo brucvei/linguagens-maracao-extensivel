@@ -1,0 +1,38 @@
+1. poema
+ Selecione o terceiro verso da última quadra.
+//poema/corpo/quadra[last()]/verso[3]
+
+ Selecione todos os nomes.
+//nome
+
+ Selecione os versos do segundo terceto.
+//poema/corpo/terno[2]/verso
+
+ Selecione os nomes ou lugares começados pela letra L
+//nome[starts-with(text(), 'L')]|//lugar[starts-with(text(), 'L')]
+
+2. agenda
+ Selecione todas as entradas de telefone com o indicativo 555.
+//entrada[telefone[starts-with(text(), '555')]]
+
+ Selecione todas as entradas que não possuem o telefone com o indicativo 555.
+//entrada[not(telefone[starts-with(text(), '555')])]
+
+ Selecione todas as entradas de pessoas com nome contendo "Librelotto" ou "José".
+//entrada[nome[contains(text(), 'Librelotto') or contains(text(), 'José')]]
+
+ Selecione os identificadores das entradas pertencentes a grupos.
+//entrada[ref]/@id
+
+ Selecione os identificadores das entradas que não são do tipo "pessoa".
+//entrada[@tipo != 'pessoa']/@id
+
+3. livro de receitas.
+ Em quais tags “ingrediente” é citado a palavra “margarina”?
+//ingrediente[text()[contains(., 'margarina')]]
+
+ Quais as receitas que estão em português?
+//receita[@língua='pt']
+
+ Quantas receitas existem no documento XML?
+count(//receita)
