@@ -1,0 +1,29 @@
+1. GioMovies:
+a. Filmes produzidos no ano de 1998;
+//filme[ano=1998]
+
+b. Títulos em português dos filmes que tenham a duração entre 120 e 140 minutos.
+//filme[duracao>120 and duracao<140]/titulo[@lingua='portugues']
+
+2. Agenda:
+a. Contatos que tenham o telefone começando por 555;
+//entrada[telefone[starts-with(.,'555')]]
+
+b. Contatos que tenham o e-mail da Universidade do Minho;
+//entrada[email[contains(.,'@uminho')]]
+
+c. Nomes dos contatos que tenham sido referenciados.
+//entrada[ref]/nome
+
+d. Entradas da agenda do tipo empresa;
+//entrada[@tipo='empresa']
+
+3. Arq-son-EVO:
+a. Selecionar o título das músicas que contêm a palavra “Jesus”
+//tit[contains(.,'Jesus')]
+
+b. Selecionar o nome de todos os músicos referidos
+//musico
+
+c. Selecionar o título de todas as músicas de “Castelo Branco”
+//doc[contains(., 'Castelo Branco')]/tit
