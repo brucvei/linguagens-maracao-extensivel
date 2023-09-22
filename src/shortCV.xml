@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pessoa>
+<pessoa>
+    <nome>Giovani Rubert Librelotto</nome>
+    <sexo>masculino</sexo>
+    <nascimento>
+        <data>1977-07-30</data>
+        <cidade>Cruz Alta/RS - Brasil</cidade>
+    </nascimento>
+    <universidade>
+        <nome>Centro Universitário Franciscano</nome>
+        <endereco>
+            <rua>Rua dos Andradas</rua>
+            <numero>1614</numero>
+            <bairro>Centro</bairro>
+            <cep>97010-032</cep>
+            <cidade>Santa Maria</cidade>
+            <estado>RS</estado>
+            <pais>Brasil</pais>
+        </endereco>
+        <contato>
+            <telefone>
+                <ddd>55</ddd>
+                <numero>32201200</numero>
+                <ramal>1258</ramal>
+            </telefone>
+            <fax>32201200</fax>
+            <email>giovani@unifra.br</email>
+            <url>http://www.unifra.br/professores/giovani</url>
+        </contato>
+    </universidade>
+    <formacao>
+        <doutorado>
+            <titulo>Doutor em Informática</titulo>
+            <instituição>Universidade do Minho, Portugal</instituição>
+            <tese>Topic Maps: da Sintaxe à Semântica</tese>
+            <ano>2005</ano>
+            <orientador>Pedro Rangel Henriques</orientador>
+        </doutorado>
+        <mestrado>
+            <titulo>Mestre em Ciência da Computação</titulo>
+            <instituição>Universidade Federal do Rio Grande do Sul, Brasil</instituição>
+            <tese>Um Compilador para a Linguagem RS Distribuída</tese>
+            <ano>2001</ano>
+            <orientador>Simão Sirineo Toscani</orientador>
+        </mestrado>
+    </formacao>
+    <publicacoes>
+        <publicacao>
+            <autores>
+                <autor>José Carlos Ramalho</autor>
+                <autor>Giovani Rubert Librelotto</autor>
+                <autor>Pedro Rangel Henriques</autor>
+            </autores>
+            <titulo>Constraining topic maps: a TMCL declarative implementation</titulo>
+            <evento>EXTREME MARKUP LANGUAGES 2005</evento>
+            <local>Montreal, Canadá</local>
+            <ano>2005</ano>
+        </publicacao>
+        <publicacao>
+            <autores>
+                <autor>Giovani Rubert Librelotto</autor>
+                <autor>José Carlos Ramalho</autor>
+                <autor>Pedro Rangel Henriques</autor>
+            </autores>
+            <titulo>Metamorphosis: a Topic Maps based Environment to Handle Heterogeneous Information Resources</titulo>
+            <evento>International Workshop on Topic Map Research and Applications (TMRA05)</evento>
+            <local>Leipzig, Alemanha</local>
+            <ano>2005</ano>
+        </publicacao>
+        <publicacao>
+            <autores>
+                <autor>Giovani Rubert Librelotto</autor>
+                <autor>José Carlos Ramalho</autor>
+                <autor>Pedro Rangel Henriques</autor>
+            </autores>
+            <titulo>XTche - A Language for Topic Maps Schema and Constraints</titulo>
+            <evento>XML CONFERENCE AND EXHIBITION 2004</evento>
+            <local>Washington, EUA</local>
+            <ano>2004</ano>
+        </publicacao>
+        <publicacao>
+            <autores>
+                <autor>Marta Henriques Jacinto</autor>
+                <autor>Giovani Rubert Librelotto</autor>
+                <autor>José Carlos Ramalho</autor>
+                <autor>Pedro Rangel Henriques</autor>
+            </autores>
+            <titulo>Constraint Specification Languages: comparing XSCL, Schematron and XML-Schemas</titulo>
+            <evento>XML EUROPE 2002</evento>
+            <local>Barcelona, Espanha</local>
+            <ano>2002</ano>
+        </publicacao>
+    </publicacoes>
+</pessoa>

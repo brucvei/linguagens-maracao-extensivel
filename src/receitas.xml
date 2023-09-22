@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<livro-de-receitas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Receitas.xsd">
+    <abertura>
+        <autor>Giovani Rubert Librelotto</autor>
+        <data>15 de Março de 2006</data>
+        <local>UNIFRA - Centro Universitario Franciscano</local>
+    </abertura>
+    <receitas>
+        <receita língua="pt" classificação="doce">
+            <título>Mousse de chocolate</título>
+            <ingredientes>
+                <ingrediente>200g de chocolate de culinária</ingrediente>
+                <ingrediente>50g de margarina</ingrediente>
+                <ingrediente>meia dúzia de ovos</ingrediente>
+                <ingrediente>4 colheres de sopa de açucar</ingrediente>
+            </ingredientes>
+            <preparação>
+                <instrução>Separam-se as gemas das claras.</instrução>
+                <instrução>Derrete-se o chocolate com a margarina.</instrução>
+                <instrução>Adicionam-se as gemas.</instrução>
+                <instrução>Mistura-se o açucar no chocolate.</instrução>
+                <instrução>Batem-se as claras em castelo.</instrução>
+                <instrução>Mistura-se tudo no recipiente final.</instrução>
+            </preparação>
+        </receita>
+    </receitas>
+</livro-de-receitas>

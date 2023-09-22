@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="filmes">
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="filmesType"></xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="filmesType">
+        <xsd:sequence>
+            <xsd:element name="filme" type="filmeType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="filmeType">
+        <xsd:sequence>
+            <xsd:element name="tituloEN" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="tituloBR" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="genero" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="duracao" type="xsd:integer" minOccurs="0"/>
+            <xsd:element name="ano" type="xsd:integer" minOccurs="0"/>
+            <xsd:element name="site" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="distribuicao" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="direcao" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="elenco" type="xsd:string" minOccurs="2" maxOccurs="unbounded"/>
+            <xsd:element name="sinopse" type="xsd:string" minOccurs="0"/>
+            <xsd:attribute name="id" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+
+</xsd:schema>
