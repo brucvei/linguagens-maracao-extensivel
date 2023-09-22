@@ -1,0 +1,50 @@
+1. Poema:
+ Quais são os nodos que possuem exatamente 3 filhos?
+//*[count(child::*) = 3]
+
+ Quais são os nodos que possuem exatamente 2 filhos?
+//*[count(child::*) = 2]
+
+ Quais são os elementos que possuem nomes com tamanho 6?
+//*[string-length(name()) = 6]
+
+ Quais são os elementos que possuem nomes com tamanho 4 ou que possuem mais que dois filhos?
+//*[string-length(name()) = 4] | //*[count(child::*) > 2]
+
+2. Agenda de contatos - terceira <entrada>:
+ Quais são todos os seus descendentes?
+//descendant::entrada[3]
+
+ Quais são todos os seus descendentes incluindo ele próprio?
+//descendant-or-self::entrada[3]
+
+ Qual é o seu pai?
+//entrada[3]/parent::*
+
+ Quais são seus ancestrais?
+//entrada[3]/ancestor::*
+
+ Quais são os seus irmãos posteriores (à direita)?
+//entrada[3]/following-sibling::*
+
+ Quais são os seus irmãos anteriores (à esquerda)?
+//entrada[3]/preceding-sibling::*
+
+ Quais são todos os nodos à sua direita?
+//entrada[3]/following::*
+
+ Quais são todos os nodos à sua esquerda?
+//entrada[3]/preceding::*
+
+3. Livro de receitas:
+ Em quais elementos que são descendentes de receita é citado a palavra ‘margarina’??
+//receita//*[contains(., 'margarina')]
+
+ Quais são os atributos de todos os ancestrais do elemento ingrediente?
+//ingrediente/ancestor::*/attribute::*
+
+ Quais dos elementos à direita de data possuem exatamente 3 elementos filhos?
+//data/following-sibling::*[count(child::*) = 3]
+
+ Quais dos elementos à esquerda de instrução iniciam com a letra ‘M’?
+//instrução/preceding-sibling::*[starts-with(name(), 'M')]
