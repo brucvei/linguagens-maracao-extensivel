@@ -1,0 +1,78 @@
+1. Poema:
+Ø A ordem do título e do autor devem ser trocadas.
+let $poema := doc(“poema.xml")/poema
+return(
+  <poema>
+    <autor>{ $poema/titulo }</autor>
+    <titulo>{ $poema/autor }</titulo>
+    <corpo>{ $poema/corpo }</corpo>
+    <data>{ $poema/data }</data>
+  </poema>
+)
+
+Ø Os dois ternos antes das duas quadras.
+let $poema := doc(“poema.xml")/poema
+return
+(
+  <poema>
+    <autor>{ $poema/autor }</autor>
+    <titulo>{ $poema/titulo }</titulo>
+    <corpo>
+      <terno>{ $poema/corpo/terno[1] }</terno>
+      <terno>{ $poema/corpo/terno[2] }</terno>
+      <quadra>{ $poema/corpo/quadra[1] }</quadra>
+      <quadra>{ $poema/corpo/quadra[2] }</quadra>
+    </corpo>
+    <data>{ $poema/data }</data>
+  </poema>
+)
+
+Ø A data não deve aparecer no arquivo saída.
+let $poema := doc(“poema.xml")/poema
+return(
+  <poema>
+    <autor>{ $poema/titulo }</autor>
+    <titulo>{ $poema/autor }</titulo>
+    <corpo>{ $poema/corpo }</corpo>
+  </poema>
+)
+
+2. Filmes:
+Ø Gerar uma saída contendo apenas os filmes que tem a duração entre 100 e 120 minutos.
+<filmes>
+{
+  for $filme in /filmes/filme
+  let $d := xs:integer($filme/duracao/text())
+  where every $d safitfies $d >= 100 or $d <= 120
+  return $filme
+}
+</filmes>
+
+Ø Gerar uma saída contendo apenas os filmes que começam com a letra E.
+<filmes>
+{
+  for $filme in /filmes/filme
+  where every $titulo in $filme/tituloEN | $filme/tituloBR satisfies
+    starts-with(lower-case($titulo), "e"))
+  return $filme
+}
+</filmes>
+
+Ø Gerar uma saída com os filmes que contenham atores que começam com a letra A ou I.
+<filmes>
+{
+  for $filme in /filmes/filme
+  where some $ator in $filme/elenco | $filme/elencoApoio satisfies
+    starts-with(lower-case($ator), "a") or starts-with(lower-case($ator), "i")
+  return $filme
+}
+</filmes>
+
+Ø Gerar uma saída com os filmes que contenham a palavra Universal no elemento distribuição.
+<filmes>
+{
+  for $filme in /filmes/filme
+  where contains(lower-case($filme/distribuicao), "universal")
+  return $filme
+}
+</filmes>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://receitas.example.com">
+
+    <xsd:import namespace="http://receitas.example.com/types" />
+
+    <xsd:element name="livro-de-receitas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="abertura" minOccurs="1"/>
+                <xsd:element ref="receitas" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="abertura">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="autor" maxOccurs="1" />
+                <xsd:element ref="data" maxOccurs="1" />
+                <xsd:element ref="local" maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="receitas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="receita" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="receita">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="título" maxOccurs="1"/>
+                <xsd:element ref="ingredientes" maxOccurs="1"/>
+                <xsd:element ref="preparação" maxOccurs="1"/>
+            </xsd:sequence>
+            <xsd:attribute name="língua" type="xsd:string" use="required"/>
+            <xsd:attribute name="classificação" type="xsd:string" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="ingredientes">
+        <xsd:sequence>
+            <xsd:element name="ingrediente" type="xsd:string" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="preparação">
+        <xsd:sequence>
+            <xsd:element name="instrução" type="xsd:string" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="autor" type="xsd:string"/>
+    <xsd:element name="data" type="xsd:date"/>
+    <xsd:element name="local" type="xsd:string"/>
+    <xsd:element name="título" type="xsd:string"/>
+
+</xsd:schema>

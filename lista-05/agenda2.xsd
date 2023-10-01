@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://agenda.example.com">
+
+    <xsd:element name="agenda" type="agendaType" />
+
+    <xsd:complexType name="agendaType">
+        <xsd:sequence>
+            <xsd:element ref="entrada" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="grupo" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="entrada" type="xsd:string"/>
+    <xsd:element name="grupo" type="xsd:string"/>
+
+</xsd:schema>
